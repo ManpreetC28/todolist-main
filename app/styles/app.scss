@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+body {
+    background-color: rgb(97, 132, 163);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+ 
+}
+ .line{
+    font-size: 50px;
+    font-weight: 800;
+    color: rgb(20, 20, 133);
+    letter-spacing: 1px;
+    margin: 30px 0;
+}
+.todo-list{
+     width: 450px;
+     padding: 20px;
+     box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+     border-radius: 5px;
+     background-color: white;    
+}
+.list-head{
+    display: grid;
+     grid-template-columns: 4fr 1fr;
+     gap: 20px;
+}
+.entered-list{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid;
+    font-size: 16px;
+    outline:none ;
+}
+.add-list{
+    border: none;
+    border-radius: 7px;
+    background-color: blue;
+    outline:none;
+    font-size: 16px;
+    color: white;
+    width: 100px;
+    
+}
+
+.tasks{
+    margin-top:30px;
+    width: 450px;
+    padding: 20px;
+    background-color: rgb(253, 252, 250);
+}
+.item{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    display: relative;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.crossbtn{
+   float: right;
+   margin-right: 0;
+   background: transparent;
+   border: none !important;
+}

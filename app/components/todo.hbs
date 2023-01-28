@@ -1,0 +1,40 @@
+<div class="todo-list">
+  <div class="list-head">
+    <input 
+    class="entered-list"
+      type="text"
+      value={{this.text}}
+      {{on "change" this.onChange}}
+    />
+    <button
+    class="add-list"
+      type=  "submit"
+      {{on "click" this.submit}}
+    >
+      Add To-Do 
+    </button>
+  </div>
+</div>
+
+
+<div class="tasks">
+  <div class="item">
+    <ol>
+      {{#each @model as |todo index|}}
+        <li>
+          {{todo}}
+          <button
+            type="button"
+            class="crossbtn"
+            {{on "click" (fn this.deleteTodoByIndex index)}}
+          >
+            ×
+          </button>
+          <br/>
+          <br/>
+
+        </li>
+      {{/each}}
+    </ol>
+  </div>
+</div>
